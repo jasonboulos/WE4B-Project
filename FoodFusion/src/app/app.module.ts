@@ -13,6 +13,17 @@ import { SpecialitemsComponent } from './specialitems/specialitems.component';
 import { HomebodyComponent } from './homebody/homebody.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { NosproduitsComponent } from './nosproduits/nosproduits.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { SigninComponent } from './signin/signin.component';
+import { MenulistComponent } from './menulist/menulist.component';
+import { BurgersComponent } from './burgers/burgers.component';
+import { PizzasComponent } from './pizzas/pizzas.component';
+import { PastasComponent } from './pastas/pastas.component';
+import { FritesComponent } from './frites/frites.component';
+import { SaladesComponent } from './salades/salades.component';
+import { BoissonsComponent } from './boissons/boissons.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +37,18 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
     SpecialitemsComponent,
     HomebodyComponent,
     FeedbackComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    NosproduitsComponent,
+    ContactComponent,
+    LoginComponent,
+    SigninComponent,
+    MenulistComponent,
+    BurgersComponent,
+    PizzasComponent,
+    PastasComponent,
+    FritesComponent,
+    SaladesComponent,
+    BoissonsComponent
   ],
   imports: [
     BrowserModule,

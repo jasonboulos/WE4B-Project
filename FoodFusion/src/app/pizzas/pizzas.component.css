@@ -1,0 +1,45 @@
+.burgers-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .burgers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .burger-item {
+    width: calc(33.33% - 10px); /* Adjust the width as needed based on the desired number of burgers per line */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .burger-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .burger-name {
+    margin-top: 10px;
+  }
+  
+.come{
+    width: 800px;
+    margin-right: 70px;
+}
+.come h2{
+    margin-left: 5%;
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1%;
+    padding-bottom: 1.7%;
+    padding-left: 1%;
+}
