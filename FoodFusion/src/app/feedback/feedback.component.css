@@ -116,3 +116,16 @@ body{
   .newsletter {
     color: #0062cc !important;
   }
+  .card-hover{
+    width: 350px;
+  }
+
+  .card-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.card-hover {
+  overflow: hidden;
+}
+

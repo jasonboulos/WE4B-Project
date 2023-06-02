@@ -51,3 +51,6 @@ header {
       display: none;
     }
   }
+  .text img{
+    width: 900px;
+  }
