@@ -33,19 +33,19 @@
           >
             <!-- Left links -->
             <ul class="navbar-nav mb-2 mb-lg-0 text">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page"   routerLink=''>ACCUIEL</a>
+              <li class="nav-item" >
+                <a class="nav-link active" (click)="selectMenuItem('ACCUIEL')" [class.active]="selectedMenuItem === 'ACCUIEL'" aria-current="page"   routerLink=''>ACCUIEL</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link"  routerLink='/nosproduits'>NOS PRODUITS</a>
+              <li class="nav-item" >
+                <a class="nav-link" (click)="selectMenuItem('NOSPRODUITS')" [class.active]="selectedMenuItem === 'NOSPRODUITS'" routerLink='/nosproduits'>NOS PRODUITS</a>
               </li>
              
-              <li class="nav-item">
-                <a class="nav-link"  routerLink='/contact'>CONTACT</a>
+              <li class="nav-item" >
+                <a class="nav-link" (click)="selectMenuItem('CONTACT')" [class.active]="selectedMenuItem === 'CONTACT'" routerLink='/contact'>CONTACT</a>
               </li>
               <!-- Navbar dropdown -->
               <li class="nav-item dropdown">
-                <a
+                <a (click)="selectMenuItem('MONCOMPTE')" [class.active]="selectedMenuItem === 'MONCOMPTE'"
                   class="nav-link dropdown-toggle"
                   
                   id="navbarDropdown"

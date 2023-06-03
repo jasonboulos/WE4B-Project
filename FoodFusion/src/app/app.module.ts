@@ -24,6 +24,9 @@ import { PastasComponent } from './pastas/pastas.component';
 import { FritesComponent } from './frites/frites.component';
 import { SaladesComponent } from './salades/salades.component';
 import { BoissonsComponent } from './boissons/boissons.component';
+import { ProductserviceService } from './productservice.service';
+import { HttpClientModule } from '@angular/common/http';
+import { SpecialproductComponent } from './specialproduct/specialproduct.component';
 
 @NgModule({
   declarations: [
@@ -48,13 +51,15 @@ import { BoissonsComponent } from './boissons/boissons.component';
     PastasComponent,
     FritesComponent,
     SaladesComponent,
-    BoissonsComponent
+    BoissonsComponent,
+    SpecialproductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductserviceService,HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

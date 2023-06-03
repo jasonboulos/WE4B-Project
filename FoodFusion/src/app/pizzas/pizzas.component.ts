@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-pizzas',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./pizzas.component.css']
 })
 export class PizzasComponent {
+  constructor(private elementRef: ElementRef) {}
+
+  scrollIntoView() {
+    this.elementRef.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  }
 
 }

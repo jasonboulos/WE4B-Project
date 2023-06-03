@@ -1,9 +1,11 @@
 *{
-    width: 85%;
+    width: 75%;
     margin: auto;
 }
 .all{
     display: flex;
+    margin-top: 7%;
+    
 }
 .menu{
     width: 30%;
@@ -14,7 +16,7 @@
 }
 .data{
     width: 70%;
-
-    margin-left: 280px;
+    padding-bottom: 200px;
+    margin-left: 20%;
 
 }

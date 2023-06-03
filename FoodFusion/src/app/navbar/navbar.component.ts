@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  selectedMenuItem: string = '';
+
+  selectMenuItem(item: string) {
+    this.selectedMenuItem = item;
+  }
 
 }

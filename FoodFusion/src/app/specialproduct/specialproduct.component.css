@@ -1,0 +1,49 @@
+.j h4{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Lora', serif;
+}
+.ajouterbutton{
+    margin-left: 40px;
+    background-color: rgb(120,41,15); 
+}
+.j:hover{
+    
+    /* border:1px solid rgb(120,41,15);
+    transition:ease-out 0.9s; */
+}
+.j button{
+    margin-bottom: 10px;
+}
+.j img{
+    cursor: pointer;
+}
+.image-container {
+    overflow: hidden;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card-sub {
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .price {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+  }
+  

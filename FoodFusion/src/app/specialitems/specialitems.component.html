@@ -1,74 +1,28 @@
+
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <div class="page-content page-container" id="page-content">
-
-    <div class="padding">
-
-        <div class="row container d-flex justify-content-center">
-
-            <div class="col-sm-12">
-
-                <!-- Draggable default card start -->
-
-                <div class="card">
-
-                    <div class="card-header">
-                       
-
-                        <h5 class="Titleprefereditems"> <img class="Iconspecial" src="./assets/Images/PrefferedItems.png" alt="">Découvrez les plats  préférés par nos clients</h5> 
-                        
-
-                    </div>
-
-                    <div class="card-block">
-
-                        <div class="row" id="sortable">
-
-                            <div class="col-md-3 test">
-
-                                <app-product></app-product>
-
-                            </div>
-
-                            <div class="col-md-3 test">
-
-                                <app-product></app-product>
-
-                            </div>
-
-                            <div class="col-md-3 test" draggable="false">
-
-                                <app-product></app-product>
-
-                            </div>
-
-                            <div class="col-md-3 test">
-                                <app-product></app-product>
-
-                            </div>
-                            <div class="col-md-3 test">
-                                <app-product></app-product>
-
-                            </div>
-                            <div class="col-md-3 test">
-                                <app-product></app-product>
-
-                            </div>
-
-
-
-                        </div>
-                        
-                        
-
-                    </div>
-
-                </div> <!-- Draggable default card start -->
-
+  <div class="padding">
+    <div class="row container d-flex justify-content-center">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="Titleprefereditems">
+              <img class="Iconspecial" src="./assets/Images/PrefferedItems.png" alt="">
+              Découvrez les plats préférés par nos clients
+            </h5>
+          </div>
+          <div class="card-block">
+            <div class="row" id="sortable">
+              <div class="col-md-4 test" *ngFor="let specialprod of SpecialProductarray">
+                <app-specialproduct [specialproduct]="specialprod"></app-specialproduct>
+              </div>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
-
+  </div>
 </div>
+
+

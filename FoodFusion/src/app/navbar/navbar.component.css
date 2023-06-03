@@ -13,12 +13,12 @@
   .navbar-nav .nav-link:hover {
     color:  rgb(120,41,15); 
   }
-  .navbar-nav .nav-link.active {
+  /* .navbar-nav .nav-link.active {
     color: rgb(120,41,15); 
     
     text-decoration-thickness: 2px;
    
-  }
+  } */
   .shopicon{
     margin-right: 3%;
     font-size: 25px;
@@ -26,4 +26,7 @@
   }
   .shopicon:hover{
         cursor: pointer;
+  }
+  li a.active{
+    color:  rgb(120,41,15);
   }
