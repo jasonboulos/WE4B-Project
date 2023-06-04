@@ -27,15 +27,6 @@ export class PizzasComponent {
       inline: 'nearest'
     });  }
   
-  // data!:
-  // @Input() data!: Product[];
 
-  // constructor(private productService: ProductserviceService) {}
-
-  // ngOnInit() {
-  //   this.productService.getProducts('pizza').subscribe((data: Product[]) => {
-  //     this.pizzaData = data;
-  //   });
-  // }
 
 }

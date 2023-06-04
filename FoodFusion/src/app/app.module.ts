@@ -26,7 +26,7 @@ import { SaladesComponent } from './salades/salades.component';
 import { BoissonsComponent } from './boissons/boissons.component';
 import { ProductserviceService } from './productservice.service';
 import { HttpClientModule } from '@angular/common/http';
-import { SpecialproductComponent } from './specialproduct/specialproduct.component';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +52,7 @@ import { SpecialproductComponent } from './specialproduct/specialproduct.compone
     FritesComponent,
     SaladesComponent,
     BoissonsComponent,
-    SpecialproductComponent
+   
   ],
   imports: [
     BrowserModule,

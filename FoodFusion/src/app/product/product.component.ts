@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/classes/product';
-import { SpecialProduct } from 'src/classes/specialproduct';
+
 
 @Component({
   selector: 'app-product',
@@ -10,7 +10,7 @@ import { SpecialProduct } from 'src/classes/specialproduct';
 export class ProductComponent implements OnInit{
     
       @Input() product!:Product
-      @Input() data!: Product;
+      // @Input() data!: Product;
       
       ngOnInit(): void {
       }

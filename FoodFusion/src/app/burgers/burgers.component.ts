@@ -8,7 +8,7 @@ import { ProductserviceService } from '../productservice.service';
 })
 export class BurgersComponent {
  
-  // @Input() dataB!: Product
+
   burgerData!: Product[];
 
   

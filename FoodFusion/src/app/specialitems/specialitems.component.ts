@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from 'src/classes/product';
 import { ProductserviceService } from '../productservice.service';
-import { SpecialProduct } from 'src/classes/specialproduct';
+
  
 @Component({
   selector: 'app-specialitems',
@@ -9,9 +9,10 @@ import { SpecialProduct } from 'src/classes/specialproduct';
   styleUrls: ['./specialitems.component.css']
 })
 export class SpecialitemsComponent {
-  SpecialProductarray : SpecialProduct[] = [];
+  SpecialProductarray!: Product[];
   constructor(private service : ProductserviceService){
-    this.service.getSpecialProducts().subscribe(data=>{this.SpecialProductarray = data})
+    this.service.getProducts().subscribe(data=>{this.SpecialProductarray = data.filter((product:Product) =>product.isSpecial === true );})
+   
   }
 
 }

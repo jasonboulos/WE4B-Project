@@ -15,23 +15,10 @@ export class NosproduitsComponent {
   @ViewChild(PizzasComponent) pizzascomponent!: PizzasComponent;
   @ViewChild(BurgersComponent) burgerscomponent !: BurgersComponent;
   @ViewChild(PastasComponent) pastacomponent !: PastasComponent;
-  pizzaData!: Product[];
-  // burgerData!: Product[];
-  productService: any;
 
-  @Input() dataB!: Product
-  @Input() dataP!: Product
-  constructor(private service : ProductserviceService){
-    this.service.getProducts().subscribe(
-      data=>{
-        // this.burgerData = data.filter((product: Product) => product.type === 'burger');
-        this.pizzaData = data.filter((product: Product) => product.type === 'pizza');
-})
-
-  }
   scrollToPizzas() {
     if (this.pizzascomponent) {
-      console.log("pizza");
+      
       this.pizzascomponent.scrollIntoView();
     }
   }
@@ -62,12 +49,12 @@ export class NosproduitsComponent {
     // });
 
     // Fetch data for other categories as needed
-    this.productService.getProducts().subscribe((data: Product[]) => {
+    //this.productService.getProducts().subscribe((data: Product[]) => {
       // Filter the data for each category
       // this.burgerData = data.filter((product: Product) => product.type === 'burger');
-      this.pizzaData = data.filter((product: Product) => product.type === 'pizza');
+      //this.pizzaData = data.filter((product: Product) => product.type === 'pizza');
       // this.pastaData = data.filter((product: Product) => product.category === 'pasta');
-    });
+    //}
   }
   
 }

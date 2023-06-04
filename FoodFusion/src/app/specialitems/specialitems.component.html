@@ -13,9 +13,10 @@
             </h5>
           </div>
           <div class="card-block">
-            <div class="row" id="sortable">
+            <div class="row" id="sortable" >
               <div class="col-md-4 test" *ngFor="let specialprod of SpecialProductarray">
-                <app-specialproduct [specialproduct]="specialprod"></app-specialproduct>
+                <app-product [product]="specialprod"></app-product>
+                
               </div>
             </div>
           </div>

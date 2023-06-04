@@ -23,17 +23,8 @@
     <div class="come">
       <div class="row">
         <div class="col-md-4" *ngFor="let burger of burgerData">
-          <div class="card-sub j">
-            <div class="image-container">
-              <img class="card-img-top img-fluid" src="./assets/Images/burger.jpg" alt="Card image cap">
-              <div class="price">{{ burger.price }}</div> 
-            </div>
-            <div class="card-block">
-              <h4 class="card-title">{{ burger.name }}</h4>
-              <!-- <p class="card-text">{{ burger.description }}</p> -->
-              <button class="btn btn-primary btn-lg ajouterbutton">Ajouter au panier</button>
-            </div>
-          </div>
+      
+          <app-product [product]="burger"></app-product>
         </div>
       </div>
     </div>
