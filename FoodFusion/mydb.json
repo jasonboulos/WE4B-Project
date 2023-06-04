@@ -82,7 +82,7 @@
       },
       {
         "id": 11,
-        "type": "burger",
+        "type": "pizza",
         "name": "Mediterranean Burger",
         "price": 5.75,
         "description": "Un burger inspiré de la cuisine méditerranéenne",
@@ -90,7 +90,7 @@
       },
       {
         "id": 12,
-        "type": "burger",
+        "type": "pizza",
         "name": "Teriyaki Burger",
         "price": 5.25,
         "description": "Un burger avec une délicieuse sauce teriyaki",
@@ -98,7 +98,7 @@
       },
       {
         "id": 13,
-        "type": "burger",
+        "type": "pizza",
         "name": "Classic Beef Burger",
         "price": 4.5,
         "description": "Un burger classique avec du bœuf juteux",
@@ -106,7 +106,7 @@
       },
       {
         "id": 14,
-        "type": "burger",
+        "type": "pizza",
         "name": "Chicken Caesar Burger",
         "price": 5.5,
         "description": "Un burger de poulet inspiré de la salade Caesar",
@@ -114,7 +114,7 @@
       },
       {
         "id": 15,
-        "type": "burger",
+        "type": "pizza",
         "name": "Bacon Ranch Burger",
         "price": 5.75,
         "description": "Un burger avec du bacon croustillant et une sauce ranch",

@@ -10,7 +10,7 @@ import { SpecialProduct } from 'src/classes/specialproduct';
 export class ProductComponent implements OnInit{
     
       @Input() product!:Product
-      
+      @Input() data!: Product;
       
       ngOnInit(): void {
       }

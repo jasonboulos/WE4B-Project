@@ -16,7 +16,7 @@ const routes: Routes = [
   {path : '', component : HomeComponent},
   {path : 'nosproduits', component : NosproduitsComponent,
   children: [
-    {path : '', redirectTo: 'burgers', pathMatch: 'full'},
+    {path : '', redirectTo: '', pathMatch: 'full'},
     {path : 'burgers',component: BurgersComponent},
     {path : 'pizzas',component: PizzasComponent},
     {path : 'pastas',component: PastasComponent},
