@@ -26,6 +26,11 @@ import { SaladesComponent } from './salades/salades.component';
 import { BoissonsComponent } from './boissons/boissons.component';
 import { ProductserviceService } from './productservice.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FullproductComponent } from './fullproduct/fullproduct.component';
+import { ShopComponent } from './shop/shop.component';
+import { ShopproductComponent } from './shopproduct/shopproduct.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -52,12 +57,17 @@ import { HttpClientModule } from '@angular/common/http';
     FritesComponent,
     SaladesComponent,
     BoissonsComponent,
+    FullproductComponent,
+    ShopComponent,
+    ShopproductComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
   ],
   providers: [ProductserviceService,HttpClientModule],
   bootstrap: [AppComponent]

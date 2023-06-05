@@ -36,14 +36,14 @@
   </div>
 </div> -->
 <div class="card-sub j">
-  <div class="image-container">
+  <div class="image-container" (click)="showFullProduct()">
     <img class="card-img-top img-fluid" src="./assets/Images/burger.jpg" alt="Card image cap">
     <div class="price">{{ product.price }}</div> 
   </div>
   <div class="card-block">
     <h4 class="card-title">{{ product.name }}</h4>
     
-    <button class="btn btn-primary btn-lg ajouterbutton">Ajouter au panier</button>
+    <button (click)="addProductToPanier(product)"  class="btn btn-primary btn-lg ajouterbutton">Ajouter au panier</button>
   </div>
 </div>
 

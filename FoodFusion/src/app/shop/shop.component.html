@@ -1,0 +1,13 @@
+
+<div id="cartModule" *ngIf="isCartOpen" class="module">
+    <br><br><br><br>
+    <h3>Shop</h3>
+    
+    <app-shopproduct *ngFor="let product of A" [product]="product"></app-shopproduct>
+    <br><br>
+  
+    <div class="checkout-button">
+      <button class="btn btn-primary">Commander</button>
+    </div>
+  </div>
+  

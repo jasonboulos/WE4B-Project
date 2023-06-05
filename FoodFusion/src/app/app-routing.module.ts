@@ -11,6 +11,7 @@ import { PastasComponent } from './pastas/pastas.component';
 import { FritesComponent } from './frites/frites.component';
 import { SaladesComponent } from './salades/salades.component';
 import { BoissonsComponent } from './boissons/boissons.component';
+import { FullproductComponent } from './fullproduct/fullproduct.component';
 
 const routes: Routes = [
   {path : '', component : HomeComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
   ]},
   {path : 'contact', component : ContactComponent},
   {path : 'login', component : LoginComponent},
-  {path : 'signin', component : SigninComponent}
+  {path : 'signin', component : SigninComponent},
+  {path: 'nosproduits/:id',component:FullproductComponent}
 ];
 
 @NgModule({

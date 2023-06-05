@@ -1,0 +1,15 @@
+
+<div class="cart-item">
+    <img class="product-image" src="./assets/Images/burger.jpg" alt="Product Image">
+    <div class="product-details">
+      <h4 class="product-name">{{product.name}}</h4>
+      <p class="product-price">{{product.price}}$</p>
+      <div class="quantity-container">
+        <button class="quantity-button decrement" (click)="decrementQuantity()"><i class="fas fa-minus"></i></button>
+        <input type="number" class="quantity-input" [(ngModel)]="quantity" (input)="updateQuantity()">
+        <button class="quantity-button increment" (click)="incrementQuantity()"><i class="fas fa-plus"></i></button>
+      </div>
+      <button class="remove-button">Remove</button>
+    </div>
+  </div>
+  

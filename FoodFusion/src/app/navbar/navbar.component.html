@@ -78,7 +78,12 @@
         </div>
         <!-- Container wrapper -->
         <div class="d-flex justify-content-end shopicon">
-          <i class="fas fa-cart-shopping"></i>
+          <a (click)="toggleCart()">
+            
+            <i  class="fas fa-cart-shopping"><span class="badge">{{ getSelectedItemsNumber() }}</span></i>
+            
+          </a>
+          
         </div>
       </nav>
     <!-- Navbar -->

@@ -30,3 +30,22 @@
   li a.active{
     color:  rgb(120,41,15);
   }
+  .shopicon a {
+    position: relative;
+  }
+  
+  .shopicon .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(211, 60, 5); 
+    color: white; 
+    font-size: 12px; 
+    border-radius: 50%;
+  }
+  
