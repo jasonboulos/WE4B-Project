@@ -6,6 +6,7 @@ export class Product {
   price: number;
   description: string;
   imageUrl: string;
+  quantity:number = 1;
 
 
   constructor(id: number,type:string,isSpecial:boolean ,name: string, price: number, description: string, imageUrl: string) {
@@ -16,5 +17,7 @@ export class Product {
     this.price = price;
     this.description = description;
     this.imageUrl = imageUrl;
+    
+    
   }
 }

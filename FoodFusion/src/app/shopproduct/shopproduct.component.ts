@@ -1,7 +1,8 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { Product } from 'src/classes/product';
+import { ProductserviceService } from '../productservice.service';
 
 
 @Component({
@@ -11,20 +12,30 @@ import { Product } from 'src/classes/product';
 })
 export class ShopproductComponent {
   @Input() product!:Product
-  quantity: number = 1;
+ public productToRemove!:Product
+ constructor(private service:ProductserviceService){
+
+ }
+  public quantity: number = 1;
   decrementQuantity() {
-    if (this.quantity > 1) {
-      this.quantity--;
+    if (this.product.quantity > 1) {
+      this.product.quantity--;
     }
   }
 
   incrementQuantity() {
-    this.quantity++;
+    this.product.quantity++;
   }
 
   updateQuantity() {
-    if (this.quantity < 1) {
-      this.quantity = 1;
+    if (this.product.quantity < 1) {
+      this.product.quantity = 1;
     }
   }
+  removeProduct(product:Product){
+    this.service.removeProduct(product)
+    // this.service.nbSelectedItems-=1
+
+  }
+
 }

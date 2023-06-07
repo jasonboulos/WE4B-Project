@@ -9,6 +9,7 @@
     padding: 20px;
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    z-index: 1;
     
   }
   .checkout-button {
@@ -18,7 +19,21 @@
     z-index: 9999;
     width: inherit;
   }
+  .close-button {
+    position: fixed;
+    top: 13%;
+    right: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #aaa;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
   
+  .close-button:hover {
+    color: #000;
+  }
   .checkout-button button {
     width: 100%;
     padding: 10px 20px;
@@ -36,8 +51,96 @@
     background-color: rgb(2, 111, 2);
   }
   
-  
+
 
   
+  .bill-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .total-label {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .total-price {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .total-price::before {
+    content: "$";
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-arrow {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .left-arrow i:hover{
+    cursor: pointer;
+  }
+  
+  .header-title {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  
+  .checkout-container {
+    margin-top: 20px;
+  }
+  
+  .checkout-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .checkout-container h2{
+    text-align: center;
+  }
+
   
   

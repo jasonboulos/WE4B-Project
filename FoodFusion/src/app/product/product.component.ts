@@ -27,7 +27,7 @@ export class ProductComponent implements OnInit{
       }
       addProductToPanier(product:Product):void{
         this.service.addToCart(product)
-        this.service.nbSelectedItems +=1
+        // this.service.nbSelectedItems +=1
         
         
       }

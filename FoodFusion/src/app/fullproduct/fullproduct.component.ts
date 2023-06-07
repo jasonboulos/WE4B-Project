@@ -14,14 +14,19 @@ export class FullproductComponent implements OnInit{
  public id !:number
  constructor(private activatedroute : ActivatedRoute, private service : ProductserviceService) { 
   
-   
+  this.id= parseInt(this.activatedroute.snapshot.paramMap.get('id') || '0') 
+  this.service.getPoductById(this.id).subscribe(data=>{this.product=data})
        
  }
   ngOnInit():void{
-    this.id= parseInt(this.activatedroute.snapshot.paramMap.get('id') || '0') 
-    this.service.getPoductById(this.id).subscribe(data=>{this.product=data})
+    
   }
-
+  addProductToPanier(product:Product):void{
+    this.service.addToCart(product)
+    // this.service.nbSelectedItems +=1
+    
+    
+  }
 
 
   

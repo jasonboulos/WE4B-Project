@@ -6,10 +6,10 @@
       <p class="product-price">{{product.price}}$</p>
       <div class="quantity-container">
         <button class="quantity-button decrement" (click)="decrementQuantity()"><i class="fas fa-minus"></i></button>
-        <input type="number" class="quantity-input" [(ngModel)]="quantity" (input)="updateQuantity()">
+        <input type="number" class="quantity-input" [(ngModel)]="product.quantity"  (input)="updateQuantity()">
         <button class="quantity-button increment" (click)="incrementQuantity()"><i class="fas fa-plus"></i></button>
       </div>
-      <button class="remove-button">Remove</button>
+      <button (click)="removeProduct(product)" class="remove-button">Remove</button>
     </div>
   </div>
   

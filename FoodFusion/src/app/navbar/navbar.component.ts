@@ -15,8 +15,8 @@ export class NavbarComponent {
     
     
   }
-  getSelectedItemsNumber(){
-    return this.service.nbSelectedItems
+  getSelectedItemsNumber():number{
+    return this.service.nbSelectedItems()
   }
  
 
