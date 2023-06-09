@@ -48,4 +48,24 @@
     font-size: 12px; 
     border-radius: 50%;
   }
+  .logout-button {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    align-items: right;
+    justify-content: right;
+    padding: 10px 30px;
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .logout-button i {
+    margin-right: 5px;
+  }
+  
+  
   

@@ -3,7 +3,7 @@
     <!-- <app-shop></app-shop> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <!-- Container wrapper -->
-        <a class="navbar-brand me-2 logo" href="">
+        <a  class="navbar-brand me-2 logo" href="">
             <img
               src="./assets/Images/websitelogo.png"
               height="80"
@@ -31,9 +31,9 @@
           <div
             class="collapse navbar-collapse justify-content-center"
             id="navbarCenteredExample"
-          >
+           >
             <!-- Left links -->
-            <ul class="navbar-nav mb-2 mb-lg-0 text">
+            <ul *ngIf="!this.userservice.isAdminOn" class="navbar-nav mb-2 mb-lg-0 text">
               <li class="nav-item" >
                 <a class="nav-link active" (click)="selectMenuItem('ACCUIEL')" [class.active]="selectedMenuItem === 'ACCUIEL'" aria-current="page"   routerLink=''>ACCUIEL</a>
               </li>
@@ -73,12 +73,24 @@
                 >
               </li> -->
             </ul>
+            <ul *ngIf="this.userservice.isAdminOn"  class="navbar-nav mb-2 mb-lg-0 text">
+              <li class="nav-item" >
+                <a class="nav-link" (click)="selectMenuItem('CONTACT')" [class.active]="selectedMenuItem === 'CONTACT'" routerLink='/contact'>Gestion des produits</a>
+
+              </li>
+              
+              
+            </ul>
+            <button  *ngIf="this.userservice.isAdminOn" (click)="logout()" class="logout-button">
+              <i class="fas fa-sign-out-alt"></i>
+              Logout
+            </button>
             <!-- Left links -->
           </div>
           <!-- Collapsible wrapper -->
         </div>
         <!-- Container wrapper -->
-        <div class="d-flex justify-content-end shopicon">
+        <div *ngIf="!this.userservice.isAdminOn" class="d-flex justify-content-end shopicon">
           <a (click)="toggleCart()">
             
             <i  class="fas fa-cart-shopping"><span class="badge">{{ getSelectedItemsNumber() }}</span></i>

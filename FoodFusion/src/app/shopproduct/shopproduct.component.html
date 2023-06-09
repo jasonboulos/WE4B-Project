@@ -4,6 +4,7 @@
     <div class="product-details">
       <h4 class="product-name">{{product.name}}</h4>
       <p class="product-price">{{product.price}}$</p>
+     
       <div class="quantity-container">
         <button class="quantity-button decrement" (click)="decrementQuantity()"><i class="fas fa-minus"></i></button>
         <input type="number" class="quantity-input" [(ngModel)]="product.quantity"  (input)="updateQuantity()">
@@ -11,5 +12,17 @@
       </div>
       <button (click)="removeProduct(product)" class="remove-button">Remove</button>
     </div>
-  </div>
+    <div class="options-container">
+      <button class="options-button" (click)="toggleIngredients()">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+      <ul class="ingredients" *ngIf="showIngredients">
+        <li><input type="checkbox" checked> Ingredient 1</li>
+        <li><input type="checkbox" checked> Ingredient 2</li>
+        <li><input type="checkbox" checked> Ingredient 3</li>
+        <li><input type="checkbox" checked> Ingredient 4</li>
+      </ul>
+    </div>
+</div>
+  
   

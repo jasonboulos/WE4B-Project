@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { user } from 'src/classes/user';
 import { ProductserviceService } from '../productservice.service';
 import { UsersService } from '../users.service';
+import { count } from 'rxjs';
 
 
 @Component({
@@ -12,7 +13,8 @@ import { UsersService } from '../users.service';
 export class SigninComponent {
   numberofusers:number = 0;
   
-  public user:user = new user(this.numberofusers+1,"", "","","")
+  user:user = new user(0,"","","","")
+
 
   constructor(private service:UsersService){
 
@@ -21,7 +23,7 @@ export class SigninComponent {
   public errorpassword:boolean = false
   public accountcreated:boolean = false
 
-  addUser(){
+  signIn(){
     
     if(this.user.username.length < 3){
       this.errorusername = true
@@ -40,7 +42,21 @@ export class SigninComponent {
       this.errorpassword = false
       this.errorusername =false
       this.accountcreated = true
-      this.service.addUser(this.user).subscribe(data=>{this.user = data})
+      // this.service.addUser(this.user).subscribe(data=>{this.user = data})
+      // this.service.getNumberOfUsers().subscribe((count)=>{
+      //   // console.log(count)
+      //   this.user.id = count +1;
+      //   console.log(this.user.id)
+       this.service.addUser(this.user).subscribe(data=>{
+           this.user = data
+           console.log(data)
+         })
+        // })
+      // this.service.registerUser(this.user).subscribe((response)=>{
+      //   console.log("signin", response);
+      //   this.user = new user(0,"","","","")
+      // },(error)=>{console.log("error", error)})
+   
       
   
         
@@ -50,4 +66,6 @@ export class SigninComponent {
  
 
   }
+
+  
 }

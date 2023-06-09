@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Output,OnInit } from '@angular/core';
 import { ProductserviceService } from '../productservice.service';
+import { UsersService } from '../users.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,13 +12,19 @@ import { ProductserviceService } from '../productservice.service';
 export class NavbarComponent {
   selectedMenuItem: string = '';
    nbselecteditems:number = 0;
-  constructor(private service: ProductserviceService){
+   isAdminOn!:boolean
+  constructor(private service: ProductserviceService, public userservice:UsersService, private router: Router){
     
+
     
     
   }
   getSelectedItemsNumber():number{
     return this.service.nbSelectedItems()
+  }
+  logout(){
+    this.userservice.isAdminOn = false;
+    this.router.navigate([""])
   }
  
 
@@ -25,6 +33,8 @@ export class NavbarComponent {
   }
   
  ngOnInit(){
+  // this.isAdminOn = this.userservice.isAdminOn
+  //   console.log(this.isAdminOn)
  
  }
 

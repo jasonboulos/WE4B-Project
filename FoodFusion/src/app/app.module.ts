@@ -30,6 +30,7 @@ import { FullproductComponent } from './fullproduct/fullproduct.component';
 import { ShopComponent } from './shop/shop.component';
 import { ShopproductComponent } from './shopproduct/shopproduct.component';
 import { FormsModule } from '@angular/forms';
+import { GestionComponent } from './gestion/gestion.component';
 
 
 
@@ -60,6 +61,7 @@ import { FormsModule } from '@angular/forms';
     FullproductComponent,
     ShopComponent,
     ShopproductComponent,
+    GestionComponent,
    
   ],
   imports: [

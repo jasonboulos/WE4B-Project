@@ -201,12 +201,27 @@
       "quantity": 1
     }
   ],
-  "user": {
-    "id": 1,
-    "username": "jason boulos",
-    "email": "ddd@gma",
-    "password": "1111",
-    "Cpassword": "1111"
-  },
-  "emails": {}
+  "user": [
+    {
+      "id": 1,
+      "username": "edafsfsd",
+      "email": "jasonboulos87@gmail.com",
+      "password": "dddd",
+      "Cpassword": "dddd"
+    },
+    {
+      "id": 2,
+      "username": "edafsfsddsfafsa",
+      "email": "jasonboulos87@gmail.com",
+      "password": "dddd",
+      "Cpassword": "dddd"
+    },
+    {
+      "id": 3,
+      "username": "ddcc",
+      "email": "ddd",
+      "password": "dddd",
+      "Cpassword": "dddd"
+    }
+  ]
 }
