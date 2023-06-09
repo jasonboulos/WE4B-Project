@@ -9,6 +9,9 @@ export class MenulistComponent {
   @Output() scrollToPizzas: EventEmitter <void> = new EventEmitter<void>();
   @Output() scrollToBurgers: EventEmitter <void> = new EventEmitter<void>();
   @Output() scrollToPastas: EventEmitter <void> = new EventEmitter<void>();
+  @Output() scrollToFrites: EventEmitter <void> = new EventEmitter<void>();
+  @Output() scrollToSalades: EventEmitter <void> = new EventEmitter<void>();
+  @Output() scrollToBoissons: EventEmitter <void> = new EventEmitter<void>();
   selectedMenuItem: string = '';
 
   selectMenuItem(item: string) {
@@ -22,6 +25,15 @@ export class MenulistComponent {
   }
   onPastaClick(){
     this.scrollToPastas.emit();
+  }
+  onFritesClick(){
+    this.scrollToFrites.emit();
+  }
+  onSaladesClick(){
+    this.scrollToSalades.emit();
+  }
+  onBoissonsClick(){
+    this.scrollToBoissons.emit();
   }
 
 }

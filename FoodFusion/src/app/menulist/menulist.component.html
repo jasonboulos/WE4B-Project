@@ -1,24 +1,23 @@
 <div class="menu-list">
-  <ul>
-    <li (click)="selectMenuItem('burgers')" [class.active]="selectedMenuItem === 'burgers'" (click)="onBurgerClick()" >
-      Nos Burgers
-    </li>
-    <li (click)="selectMenuItem('pizza')" [class.active]="selectedMenuItem === 'pizza'"(click)="onPizzaClick()">
-      <!-- <a routerLink="/nosproduits/pizzas">Nos Pizzas</a> -->
-      Nos Pizzas
-    </li>
-    <li (click)="selectMenuItem('pastas')" [class.active]="selectedMenuItem === 'pastas'"(click)="onPastaClick()">
-      Nos Pastas
-    </li>
-    <li (click)="selectMenuItem('frites')" [class.active]="selectedMenuItem === 'frites'">
-      Nos Frites
-    </li>
-    <li (click)="selectMenuItem('salades')" [class.active]="selectedMenuItem === 'salades'">
-      Nos Salades
-    <li (click)="selectMenuItem('boissons')" [class.active]="selectedMenuItem === 'boissons'">
-      Nos Boissons
-    </li>
-    <!-- Add more menu items as needed -->
-  </ul>
+    <ul>
+        <li (click)="selectMenuItem('burgers')" [class.active]="selectedMenuItem === 'burgers'" (click)="onBurgerClick()">
+            Nos Burgers
+        </li>
+        <li (click)="selectMenuItem('pizza')" [class.active]="selectedMenuItem === 'pizza'" (click)="onPizzaClick()">
+            <!-- <a routerLink="/nosproduits/pizzas">Nos Pizzas</a> -->
+            Nos Pizzas
+        </li>
+        <li (click)="selectMenuItem('pastas')" [class.active]="selectedMenuItem === 'pastas'" (click)="onPastaClick()">
+            Nos Pastas
+        </li>
+        <li (click)="selectMenuItem('frites')" [class.active]="selectedMenuItem === 'frites'" (click)="onFritesClick()">
+            Nos Frites
+        </li>
+        <li (click)="selectMenuItem('salades')" [class.active]="selectedMenuItem === 'salades'" (click)="onSaladesClick()">
+            Nos Salades
+            <li (click)="selectMenuItem('boissons')" [class.active]="selectedMenuItem === 'boissons'" (click)="onBoissonsClick()">
+                Nos Boissons
+            </li>
+            <!-- Add more menu items as needed -->
+    </ul>
 </div>
-

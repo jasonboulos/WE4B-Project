@@ -1,227 +1,475 @@
 {
-  "product": [
-    {
-      "id": 1,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Cheese Burger",
-      "price": 3,
-      "description": "Ceci est un delicieux burger",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 2,
-      "type": "burger",
-      "isSpecial": true,
-      "name": "Double Cheese Burger",
-      "price": 4.5,
-      "description": "Un burger doublement délicieux",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 3,
-      "type": "burger",
-      "isSpecial": true,
-      "name": "BBQ Bacon Burger",
-      "price": 5.5,
-      "description": "Un burger délicieux avec du bacon et une sauce BBQ",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 4,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Mushroom Swiss Burger",
-      "price": 4.25,
-      "description": "Un burger garni de champignons et de fromage suisse",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 5,
-      "type": "burger",
-      "isSpecial": true,
-      "name": "Veggie Burger",
-      "price": 4,
-      "description": "Un burger végétarien savoureux",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 6,
-      "type": "burger",
-      "isSpecial": true,
-      "name": "Spicy Chicken Burger",
-      "price": 5,
-      "description": "Un burger au poulet épicé qui vous fera saliver",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 7,
-      "type": "burger",
-      "isSpecial": true,
-      "name": "Hawaiian Burger",
-      "price": 4.75,
-      "description": "Un burger avec du jambon et de l'ananas",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 8,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Avocado Burger",
-      "price": 5.25,
-      "description": "Un burger garni d'avocat frais",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 9,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Mozzarella Burger",
-      "price": 4.5,
-      "description": "Un burger avec du fromage mozzarella fondant",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 10,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Jalapeno Burger",
-      "price": 5.5,
-      "description": "Un burger épicé avec des jalapenos",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 11,
-      "type": "pizza",
-      "isSpecial": true,
-      "name": "Mediterranean Burger",
-      "price": 5.75,
-      "description": "Un burger inspiré de la cuisine méditerranéenne",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 12,
-      "type": "pizza",
-      "isSpecial": false,
-      "name": "Teriyaki Burger",
-      "price": 5.25,
-      "description": "Un burger avec une délicieuse sauce teriyaki",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 13,
-      "type": "pizza",
-      "isSpecial": true,
-      "name": "Classic Beef Burger",
-      "price": 4.5,
-      "description": "Un burger classique avec du bœuf juteux",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 14,
-      "type": "pizza",
-      "isSpecial": false,
-      "name": "Chicken Caesar Burger",
-      "price": 5.5,
-      "description": "Un burger de poulet inspiré de la salade Caesar",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 15,
-      "type": "pizza",
-      "isSpecial": false,
-      "name": "Bacon Ranch Burger",
-      "price": 5.75,
-      "description": "Un burger avec du bacon croustillant et une sauce ranch",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 16,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Portobello Mushroom Burger",
-      "price": 5.25,
-      "description": "Un burger avec un gros champignon Portobello grillé",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 17,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Turkey Burger",
-      "price": 4.75,
-      "description": "Un burger à base de dinde maigre et savoureuse",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 18,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Greek Lamb Burger",
-      "price": 6,
-      "description": "Un burger d'agneau à la saveur grecque",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 19,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Blue Cheese Burger",
-      "price": 5,
-      "description": "Un burger avec du fromage bleu et une sauce spéciale",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    },
-    {
-      "id": 20,
-      "type": "burger",
-      "isSpecial": false,
-      "name": "Mexican Burger",
-      "price": 5.5,
-      "description": "Un burger avec des saveurs mexicaines épicées",
-      "imageUrl": "./assets/Images/burger.jpg",
-      "quantity": 1
-    }
-  ],
-  "user": [
-    {
-      "id": 1,
-      "username": "edafsfsd",
-      "email": "jasonboulos87@gmail.com",
-      "password": "dddd",
-      "Cpassword": "dddd"
-    },
-    {
-      "id": 2,
-      "username": "edafsfsddsfafsa",
-      "email": "jasonboulos87@gmail.com",
-      "password": "dddd",
-      "Cpassword": "dddd"
-    },
-    {
-      "id": 3,
-      "username": "ddcc",
-      "email": "ddd",
-      "password": "dddd",
-      "Cpassword": "dddd"
-    }
-  ]
+    "product": [{
+            "id": 1,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Cheese Burger",
+            "price": 3,
+            "description": "Ceci est un delicieux burger",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 2,
+            "type": "burger",
+            "isSpecial": true,
+            "name": "Double Cheese Burger",
+            "price": 4.5,
+            "description": "Un burger doublement délicieux",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 3,
+            "type": "burger",
+            "isSpecial": true,
+            "name": "BBQ Bacon Burger",
+            "price": 5.5,
+            "description": "Un burger délicieux avec du bacon et une sauce BBQ",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 4,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Mushroom Swiss Burger",
+            "price": 4.25,
+            "description": "Un burger garni de champignons et de fromage suisse",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 5,
+            "type": "burger",
+            "isSpecial": true,
+            "name": "Veggie Burger",
+            "price": 4,
+            "description": "Un burger végétarien savoureux",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 6,
+            "type": "burger",
+            "isSpecial": true,
+            "name": "Spicy Chicken Burger",
+            "price": 5,
+            "description": "Un burger au poulet épicé qui vous fera saliver",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 7,
+            "type": "burger",
+            "isSpecial": true,
+            "name": "Hawaiian Burger",
+            "price": 4.75,
+            "description": "Un burger avec du jambon et de l'ananas",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 8,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Avocado Burger",
+            "price": 5.25,
+            "description": "Un burger garni d'avocat frais",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 9,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Mozzarella Burger",
+            "price": 4.5,
+            "description": "Un burger avec du fromage mozzarella fondant",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 10,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Jalapeno Burger",
+            "price": 5.5,
+            "description": "Un burger épicé avec des jalapenos",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 11,
+            "type": "pizza",
+            "isSpecial": true,
+            "name": "Mediterranean Burger",
+            "price": 5.75,
+            "description": "Un burger inspiré de la cuisine méditerranéenne",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 12,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "Teriyaki Burger",
+            "price": 5.25,
+            "description": "Un burger avec une délicieuse sauce teriyaki",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 13,
+            "type": "pizza",
+            "isSpecial": true,
+            "name": "Classic Beef Burger",
+            "price": 4.5,
+            "description": "Un burger classique avec du bœuf juteux",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 14,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "Chicken Caesar Burger",
+            "price": 5.5,
+            "description": "Un burger de poulet inspiré de la salade Caesar",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 15,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "Bacon Ranch Burger",
+            "price": 5.75,
+            "description": "Un burger avec du bacon croustillant et une sauce ranch",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 16,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Portobello Mushroom Burger",
+            "price": 5.25,
+            "description": "Un burger avec un gros champignon Portobello grillé",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 17,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Turkey Burger",
+            "price": 4.75,
+            "description": "Un burger à base de dinde maigre et savoureuse",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 18,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Greek Lamb Burger",
+            "price": 6,
+            "description": "Un burger d'agneau à la saveur grecque",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 19,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Blue Cheese Burger",
+            "price": 5,
+            "description": "Un burger avec du fromage bleu et une sauce spéciale",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 20,
+            "type": "burger",
+            "isSpecial": false,
+            "name": "Mexican Burger",
+            "price": 5.5,
+            "description": "Un burger avec des saveurs mexicaines épicées",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 21,
+            "type": "frite",
+            "isSpecial": false,
+            "name": "frite patate douce",
+            "price": 3,
+            "description": "Ceci est une delicieuse frite",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 22,
+            "type": "frite",
+            "isSpecial": true,
+            "name": "frite ondulées",
+            "price": 4.5,
+            "description": "cette frite est doublement délicieuse",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 23,
+            "type": "frite",
+            "isSpecial": true,
+            "name": "frite rissolée",
+            "price": 5.5,
+            "description": "Une délicieuse frite en forme de riz",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 24,
+            "type": "frite",
+            "isSpecial": false,
+            "name": "frite épicée",
+            "price": 4.25,
+            "description": "Une frite pimenté ",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 25,
+            "type": "frite",
+            "isSpecial": true,
+            "name": "frite paille",
+            "price": 4,
+            "description": "Une frite rare et sovoureuse",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 26,
+            "type": "salade ",
+            "isSpecial": true,
+            "name": "salade saison",
+            "price": 5,
+            "description": "Tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 27,
+            "type": "salade",
+            "isSpecial": true,
+            "name": "salade Grecque",
+            "price": 4.75,
+            "description": "feta,Tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 28,
+            "type": "salade",
+            "isSpecial": false,
+            "name": "salade du chef",
+            "price": 5.25,
+            "description": "Poulet, Chedar,Tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 29,
+            "type": "salade",
+            "isSpecial": false,
+            "name": "Salade Nicoise",
+            "price": 4.5,
+            "description": "anchois, thonTomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 30,
+            "type": "salade",
+            "isSpecial": false,
+            "name": "salade chinoise",
+            "price": 5.5,
+            "description": "salade épicé avec Tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 31,
+            "type": "boisson",
+            "isSpecial": true,
+            "name": "coca-cola",
+            "price": 5.75,
+            "description": "50CL",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 32,
+            "type": "boisson",
+            "isSpecial": false,
+            "name": "sprite",
+            "price": 5.25,
+            "description": "50CL",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 33,
+            "type": "boisson",
+            "isSpecial": true,
+            "name": "eau",
+            "price": 4.5,
+            "description": "50CL",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 34,
+            "type": "boisson",
+            "isSpecial": false,
+            "name": "tea",
+            "price": 5.5,
+            "description": "50CL",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 35,
+            "type": "boisson",
+            "isSpecial": false,
+            "name": "fanta",
+            "price": 5.75,
+            "description": "50CL",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 36,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "pizza canibale",
+            "price": 5.25,
+            "description": "boeuf, poulet, tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 37,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "pizza au jambon",
+            "price": 4.75,
+            "description": "Jambon , souce blanche tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 38,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "pizza poulet",
+            "price": 6,
+            "description": "poulet, tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 39,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "pizza fromage",
+            "price": 5,
+            "description": "fromage, tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 40,
+            "type": "pizza",
+            "isSpecial": false,
+            "name": "pizza mexicaine",
+            "price": 5.5,
+            "description": "pizza mexicaines épicées",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 41,
+            "type": "pasta",
+            "isSpecial": false,
+            "name": "pasta cavatelli",
+            "price": 5.25,
+            "description": "pasta italienne",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 42,
+            "type": "pasta",
+            "isSpecial": false,
+            "name": "pasta rigatoni",
+            "price": 4.75,
+            "description": "saveur rare",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 43,
+            "type": "pasta",
+            "isSpecial": false,
+            "name": "pasta bolognaise",
+            "price": 6,
+            "description": "boulette, tomate, concombre, Laitue, olive",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 44,
+            "type": "pasta",
+            "isSpecial": false,
+            "name": "pasta farfalle",
+            "price": 5,
+            "description": "gourmante",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 45,
+            "type": "pasta",
+            "isSpecial": false,
+            "name": "pasta fusilli",
+            "price": 5.5,
+            "description": "excellent",
+            "imageUrl": "./assets/Images/burger.jpg",
+            "quantity": 1
+        }
+    ],
+    "user": [{
+            "id": 1,
+            "username": "edafsfsd",
+            "email": "jasonboulos87@gmail.com",
+            "password": "dddd",
+            "Cpassword": "dddd"
+        },
+        {
+            "id": 2,
+            "username": "edafsfsddsfafsa",
+            "email": "jasonboulos87@gmail.com",
+            "password": "dddd",
+            "Cpassword": "dddd"
+        },
+        {
+            "id": 3,
+            "username": "ddcc",
+            "email": "ddd",
+            "password": "dddd",
+            "Cpassword": "dddd"
+        }
+    ]
 }

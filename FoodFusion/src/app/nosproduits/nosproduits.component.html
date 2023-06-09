@@ -1,15 +1,19 @@
 <br><br><br><br>
 <app-shop></app-shop>
 <div class="all">
-  <div class="menu">
-    <app-menu-list (scrollToPastas)="scrollToPastas()" (scrollToPizzas)="scrollToPizzas()" (scrollToBurgers)="scrollToBurgers()"></app-menu-list>
-  </div> 
-  <div class="data">
-    <app-burgers></app-burgers>
-    <!-- Pizza container -->
-    <app-pizzas></app-pizzas>
-    <!-- <app-shop></app-shop> -->
-    
-  </div>
+    <div class="menu">
+        <app-menu-list (scrollToBurgers)="scrollToBurgers()" (scrollToPizzas)="scrollToPizzas()" (scrollToPastas)="scrollToPastas()" (scrollToFrites)="scrollToFrites()" (scrollToSalades)="scrollToSalades()" (scrollToBoissons)=" scrollToBoissons() "></app-menu-list>
+    </div>
+    <div class="data">
+        <app-burgers></app-burgers>
+        <!-- Pizza container -->
+        <app-pizzas></app-pizzas>
+        <!-- <app-shop></app-shop> -->
+        <app-pastas></app-pastas>
+        <app-frites></app-frites>
+        <app-salades></app-salades>
+        <app-boissons></app-boissons>
+
+    </div>
 </div>
 <app-footer></app-footer>

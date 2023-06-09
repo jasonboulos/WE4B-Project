@@ -1,1 +1,30 @@
-<app-product *ngFor=" let prod of A" [product]="prod"></app-product>
+<!-- <div class="product-container"> -->
+
+
+<!-- <div class="col-4"><app-product></app-product></div> -->
+<!-- <div class="col-4"><app-product></app-product></div>
+    <div class="col-4"><app-product></app-product></div>
+    <div class="col-4"><app-product></app-product></div> -->
+
+<!--   
+  <div class="row">
+    <div class="col-sm-4"><app-product></app-product></div>
+    <div class="col-sm-4"><app-product></app-product></div>
+    <div class="col-sm-4"><app-product></app-product></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4"><app-product></app-product></div>
+    <div class="col-md-4"><app-product></app-product></div>
+    <div class="col-md-4"><app-product></app-product></div>
+  </div> -->
+
+<h2 class="tit">Frites:</h2>
+<div class="come">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let frite of friteData">
+
+            <app-product [product]="frite"></app-product>
+        </div>
+    </div>
+</div>
