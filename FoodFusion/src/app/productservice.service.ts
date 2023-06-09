@@ -37,10 +37,10 @@ export class ProductserviceService {
   }
 
   getProducts():Observable<Product[]>{
-    return this.http.get<Product[]>('http://localhost:4000/product')
+    return this.http.get<Product[]>('http://localhost:3000/product')
   }
   getPoductById(prd_idx: number): Observable<Product> {
-    return this.http.get<Product>('http://localhost:4000/product/' + prd_idx);
+    return this.http.get<Product>('http://localhost:3000/product/' + prd_idx);
   }
   addToCart(product:Product){
     if (!this.SelectedItemsarray.some((p: Product) => p === product)){

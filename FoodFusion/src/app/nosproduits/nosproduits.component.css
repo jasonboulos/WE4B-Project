@@ -79,4 +79,6 @@
 .data{
   position: relative;
   left: 30%;
+  /* border: 1px solid rgba(0, 0, 0, 0.078); */
+  padding-left: 28px;
 }

@@ -10,15 +10,19 @@
   .menu-list ul {
     list-style-type: none;
     padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.122);
+    width: 270px;
+    text-align: center;
   }
   
   .menu-list li {
     padding: 10px;
     /* background-color: #faf8f8; */
     border-bottom: 1px solid #c8c4c44a;
-    font-weight: bold;
-    font-family: 'Lora';
-    color: black;
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    /* color: black; */
 
   }
 

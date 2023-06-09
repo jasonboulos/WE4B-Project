@@ -180,14 +180,14 @@ body {
   .Titleprefereditems {
     text-align: center;
     color: rgb(120, 41, 15);
-    font-size: 32px;
-    font-family: 'Lora', serif;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
   }
   
   .Iconspecial {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: relative;
     right: 40px;
   }
@@ -201,5 +201,34 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
+  }
+  
+
+  .card-block {
+    padding: 1.25rem;
+    background-color: #fff !important;
+    position: relative; /* Add this */
+  }
+  
+  .product-title {
+    text-align: right;
+    color: rgb(120, 41, 15);
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .product-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .product-button {
+    display: block;
+    margin: 10px auto;
   }
   

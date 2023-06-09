@@ -104,7 +104,12 @@
 .ajouterbutton {
   margin-bottom: 100px;
 }
-
+.tit{
+  font-family: 'Bebas Neue', sans-serif;
+  border-left: 3px solid rgba(0, 0, 0, 0.436);
+  border-radius: 15px;
+  padding-left: 10px;
+}
 
 
 

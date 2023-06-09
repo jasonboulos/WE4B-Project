@@ -2,6 +2,7 @@ body{
     background-color:#eee;
 }
 
+
 .card{
     
     border:none;
@@ -13,13 +14,18 @@ body{
 }
 
 
+
 .ratings i{
     color:gold;
 }
 .titlefeedback{
     margin-bottom: 50px;
-    font-family: 'Lora', serif;
-}
+    font-family: 'Bebas Neue', sans-serif;
+    /* color: rgb(120, 41, 15); */
+    font-size: 30px;
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-weight: 500;
+  }
 .titlefeedback i{
     margin-right: 10px;
     color:  rgb(120,41,15);
