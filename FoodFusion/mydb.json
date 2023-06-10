@@ -259,6 +259,26 @@
       "description": "Champignons, soja, poivrons",
       "imageUrl": "./assets/Images/stockImages/salad4.jpg",
       "quantity": 1
+    },
+    {
+      "quantity": 1,
+      "id": 27,
+      "type": "burger",
+      "isSpecial": false,
+      "name": "HamBurger",
+      "price": "4",
+      "description": "Dégustez l'alliance parfaite d'un bœuf juteux grillé à la flamme, niché entre deux petits pains moelleux, agrémenté d'ingrédients alléchants. Une expérience ultime du burger qui vous laissera en redemander. #BurgerGourmand",
+      "imageUrl": "./assets/Images/stockImages/burger5.jpg"
+    },
+    {
+      "quantity": 1,
+      "id": 29,
+      "type": "burger",
+      "isSpecial": false,
+      "name": "Swiss-Muchroom Burger",
+      "price": "5.5",
+      "description": "Dégustez l'alliance parfaite d'un bœuf juteux grillé à la flamme, niché entre deux petits pains moelleux, agrémenté d'ingrédients alléchants. Une expérience ultime du burger qui vous laissera en redemander.",
+      "imageUrl": "./assets/Images/stockImages/burger6.jpg"
     }
   ]
 }

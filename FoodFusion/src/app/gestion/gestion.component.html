@@ -263,9 +263,7 @@
                   <option>salade</option>
                   <option>boisson</option>
                 </select>
-                <div *ngIf="missingtype" class="invalid-feedback">
-                  Please select a valid country.
-                </div>
+               
               </div>
               <div class="col-md-4 mb-3">
                 <div class="spec">
@@ -278,6 +276,13 @@
                 <div class="col-md-3 mb-3">
                   <button class="btn btn-primary btn-add-product addp" (click)="addProduct()">Ajouter Produit</button>
                 </div>
+              </div>
+              <div class="prod" *ngIf="productadded">
+               <p>Produit Ajouter! </p> 
+
+              </div>
+              <div *ngIf="missingtype" class="prodd">
+                <p>all fields are required!</p>
               </div>
          
             </div>

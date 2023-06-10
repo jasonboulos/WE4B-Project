@@ -13,7 +13,7 @@ export class GestionComponent {
   public missingtype:boolean = false;
   public products!: Product[]
   public type:String="";
-
+  public productadded: boolean = false;
 
 constructor(private service: ProductserviceService){
   this.service.getProducts().subscribe(data=>this.products = data)
@@ -46,15 +46,18 @@ getProductbytype(){
   
 }
 addProduct() {
-  if(this.product.type =="Choose..."){
+  if(this.product.type =="" ||this.product.imageUrl=="" ||this.product.description=="" || this.product.name ==""|| this.product.price ==0){
     this.missingtype=true;
+    this.productadded = false;
+    
   }
   else{
     this.service.getProducts().subscribe(products => {
       const productCount = products.length;
       this.product.id = productCount + 1;
       console.log(this.product.id)
-  
+      this.productadded = true;
+      this.missingtype = false;
       this.service.addProduct(this.product).subscribe(data => {
         this.product = data;
       });
