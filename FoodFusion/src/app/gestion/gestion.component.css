@@ -34,7 +34,7 @@
   }
    */
 
-   .product-form {
+   /* .product-form {
     max-width: 400px;
     margin: 0 auto;
   }
@@ -66,4 +66,122 @@
     border-radius: 4px;
     cursor: pointer;
   }
+   */
+   /* .admin-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
   
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  } */
+ 
+  .delete-icon {
+    color: red;
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 19px;
+  }
+  .dropdown-menu {
+    min-width: 100%;
+  } 
+  .scrollable-list {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  #productDropdown {
+    padding: 3px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    width: 200px;
+  }
+  
+  #productDropdown option {
+    padding: 10px;
+  }
+  
+  #productDropdown option:hover {
+    background-color: #f5f5f5;
+  }
+
+  .addp{
+    width: 200px;
+    position:relative;
+    left: 170px;
+  }
+  #productDropdown option:selected {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
+  .h{
+    margin-right: 30px;
+    font-size: 50px;
+  }
+.container{
+  width: 150%;
+  padding-top: 30px;
+  /* width: 90%; */
+}
+.spec{
+  position: relative;
+  top: 26px;
+}
+.desc{
+  position: relative;
+  left: 49px;
+  width:318px ;
+}
+.grid-margin{
+  margin-top:100px;
+}
+
+.bg-facebook {
+  background: #3b579d;
+} 
+
+.icon-md {
+  font-size: 2.2rem;
+}
+
+.bg-linkedin {
+  background: #0177b5;
+}
+
+.bg-twitter {
+  background: #2caae1;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid #d2d2dc;
+  border-radius: 0;
+}
+.row{
+  width: 90%;
+  margin: auto;
+}

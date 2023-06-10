@@ -19,23 +19,23 @@ export class UsersService {
   //     })
   //   );
   // }
-  registerUser(user: user): Observable<user> {
-    user.id = ++this.currentId; // Assign the incremented ID to the user object
-    return this.http.post<user>('http://localhost:3000/user', user);
-  }
+  // registerUser(user: user): Observable<user> {
+  //   user.id = ++this.currentId; // Assign the incremented ID to the user object
+  //   return this.http.post<user>('http://localhost:3000/user', user);
+  // }
 
   addUser(user: any): Observable<any> {
     user.id = ++this.currentId;
-    return this.http.post<any>('http://localhost:3000/user', user);
+    return this.http.post<any>('http://localhost:4000/user', user);
   }
 
   getNumberOfUsers(): Observable<number> {
-    return this.http.get<number>('http://localhost:3000/user');
+    return this.http.get<number>('http://localhost:4000/user');
   }
 
 
    getUsers(): Observable<user[]>{
-    return this.http.get<user[]>('http://localhost:3000/user')
+    return this.http.get<user[]>('http://localhost:4000/user')
 
    }
    getUserTableLength(): Observable<number> {

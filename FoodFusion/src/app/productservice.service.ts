@@ -12,6 +12,7 @@ export class ProductserviceService {
   product !: Product;
   // pizzaData!: Product[];
   // burgerData!: Product[];
+  private currentId = 0;
   SelectedItemsarray :Product[] = [];
   // public nbSelectedItems :number = 0;
   productRemoved: EventEmitter<void> = new EventEmitter<void>();
@@ -37,16 +38,29 @@ export class ProductserviceService {
   }
 
   getProducts():Observable<Product[]>{
-    return this.http.get<Product[]>('http://localhost:3000/product')
+    return this.http.get<Product[]>('http://localhost:4000/product')
+  }
+  getProductsCount(): Observable<number> {
+    return this.http.get<number>('http://localhost:4000/product');
   }
   getPoductById(prd_idx: number): Observable<Product> {
-    return this.http.get<Product>('http://localhost:3000/product/' + prd_idx);
+    return this.http.get<Product>('http://localhost:4000/product/' + prd_idx);
   }
   addToCart(product:Product){
     if (!this.SelectedItemsarray.some((p: Product) => p === product)){
       this.SelectedItemsarray.push(product)
     }
     
+    
+  }
+  addProduct(product:Product):Observable<Product>{
+    // product.id = ++this.currentId
+    return this.http.post<Product>('http://localhost:4000/product',product)
+
+    
+  }
+  deleteProduct(product:Product):Observable<Product>{
+    return this.http.delete<Product>(`http://localhost:4000/product/${product.id}`);
     
   }
 
