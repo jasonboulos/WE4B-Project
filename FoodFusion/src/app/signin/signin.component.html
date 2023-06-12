@@ -7,22 +7,27 @@
             <h2 class="text-center"><strong>Welcome!</strong></h2>
             <div class="form-group"><input class="form-control" type="Username" [(ngModel)]="user.username" name="Username" placeholder="Username"></div>
             <p *ngIf="errorusername">Username must be more than 3 letters! </p>
+            <p *ngIf="usernameexist">Username already exists! </p>
             <div class="form-group"><input class="form-control" type="email" [(ngModel)]="user.email" name="Email" placeholder="Email"></div>
 
             <div class="form-group"><input class="form-control" type="password"[(ngModel)]="user.password" name="password" placeholder="Password"></div>
             <p *ngIf="errorpassword">Password and it's confirmation are different!</p>
             <div class="form-group"><input class="form-control" type="password" [(ngModel)]="user.Cpassword"name="Cpassword" placeholder="Confirm Password"></div>
-
-
+            
+            <div class="errors">
+                <p *ngIf="accountcreated">Account created!</p>
+                    <a *ngIf="accountcreated"routerLink="../login">click to login</a>
+            </div>
             <div class="form-group">
-                <div class="d-flex justify-content-between">
-                    <p *ngIf="accountcreated">Account created!</p>
+                <div class="d-flex justify-content-between l">
+                    <!-- <p *ngIf="accountcreated">Account created!</p>
+                    <a *ngIf="accountcreated"routerLink="../login">Go to login</a> -->
         <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> Remember me </label> </div>
         <!-- <div> <a href="#" class="text- color1">Forgot Password</a> </div> -->
     </div>
-            </div>
-            <div class="form-group"><button class="btn btn-success btn-block btn-info color" (click)="signIn()" type="submit">Sign in</button></div><a class="already" href="#">Terms of Use and Privacy Policy</a>
-        </form>
+                </div>
+                <div class="form-group"><button class="btn btn-success btn-block btn-info color" (click)="signIn()" type="submit">Sign in</button></div><a class="already" href="#">Terms of Use and Privacy Policy</a>
+            </form>
+        </div>
     </div>
-</div>
-<app-footer></app-footer>
+    <app-footer></app-footer>

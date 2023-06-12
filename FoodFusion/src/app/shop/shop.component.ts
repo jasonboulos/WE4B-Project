@@ -3,6 +3,7 @@ import { Product } from 'src/classes/product';
 import { ProductserviceService } from '../productservice.service';
 import * as jspdf from 'jspdf';
 import html2canvas from 'html2canvas';
+import { UsersService } from '../users.service';
 
 
 @Component({
@@ -22,8 +23,9 @@ export class ShopComponent implements OnInit {
   phonenumber: String = ""
   missinginput:boolean = false;
   currentDate:Date;
+  usern!:string
 
-  constructor(private service:ProductserviceService){
+  constructor(private service:ProductserviceService,private userservice:UsersService){
     this.currentDate = new Date();
   }
   payer(){
@@ -35,6 +37,22 @@ export class ShopComponent implements OnInit {
     else{
       this.missinginput = false
       this.isPayerClicked = true;
+      if(localStorage.getItem('name')){
+        console.log("enter")
+        this.usern = localStorage.getItem('name')??''
+        console.log(this.usern)
+        this.userservice.getUserByname(this.usern).subscribe(user=>{
+          if(user){
+            console.log(user)
+            user.points += this.calculateTotalPrice()*5
+            user.commandes +=1
+            console.log(user.points)
+            this.userservice.updateuser(user).subscribe(res=>console.log("user updated",res))
+          }
+
+        })
+
+      }
       this.service.SelectedItemsarray = []
       this.B = this.A;
       this.A = []

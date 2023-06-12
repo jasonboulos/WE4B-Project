@@ -6,7 +6,7 @@
       "isSpecial": true,
       "name": "Cheeseburger",
       "price": 4.75,
-      "description": "La base !",
+      "description": "The classic choice! A mouthwatering burger with a juicy beef patty and melted cheese.Ingredients: Beef patty, cheese, bun, lettuce, tomato, onion, pickles, ketchup, mustard.",
       "imageUrl": "./assets/Images/stockImages/burger3.jpg",
       "quantity": 1
     },
@@ -16,7 +16,7 @@
       "isSpecial": false,
       "name": "Veggie Burger",
       "price": 5.25,
-      "description": "Un burger garni d'avocat frais",
+      "description": "A burger filled with fresh avocado for a delicious and healthy option. Ingredients: Veggie patty, avocado, bun, lettuce, tomato, onion, pickles, ketchup, mustard.",
       "imageUrl": "./assets/Images/stockImages/burger2.jpg",
       "quantity": 1
     },
@@ -26,7 +26,7 @@
       "isSpecial": false,
       "name": "Farmer Burger",
       "price": 4.5,
-      "description": "Un burger avec des ingrédients authentiques",
+      "description": "A burger with authentic ingredients for a rustic and flavorful experience. Ingredients: Beef patty, bacon, cheddar cheese, bun, lettuce, tomato, onion, pickles, barbecue sauce.",
       "imageUrl": "./assets/Images/stockImages/burger1.jpg",
       "quantity": 1
     },
@@ -36,7 +36,7 @@
       "isSpecial": true,
       "name": "Spicy chicken burger",
       "price": 5.5,
-      "description": "Un burger au poulet épicé",
+      "description": "A burger with a spicy twist, featuring a flavorful chicken patty. Ingredients: Chicken patty, jalapenos, pepper jack cheese, bun, lettuce, tomato, onion, chipotle sauce.",
       "imageUrl": "./assets/Images/stockImages/burger4.jpg",
       "quantity": 1
     },
@@ -46,7 +46,7 @@
       "isSpecial": true,
       "name": "Pepperoni",
       "price": 5.75,
-      "description": "Un classique efficace !",
+      "description": "A classic and effective choice with delicious pepperoni toppings. Ingredients: Pizza dough, tomato sauce, mozzarella cheese, pepperoni slices, oregano.",
       "imageUrl": "./assets/Images/stockImages/pizza1.jpg",
       "quantity": 1
     },
@@ -56,7 +56,7 @@
       "isSpecial": false,
       "name": "Savoyarde",
       "price": 5.25,
-      "description": "Lardons, pommes de terre et reblochon",
+      "description": "A pizza topped with bacon, potatoes, and reblochon cheese for a rich and satisfying flavor. Ingredients: Pizza dough, crème fraîche, bacon, potatoes, reblochon cheese, onions.",
       "imageUrl": "./assets/Images/stockImages/pizza2.jpg",
       "quantity": 1
     },
@@ -66,7 +66,7 @@
       "isSpecial": true,
       "name": "Poivron et bacon",
       "price": 4.5,
-      "description": "Des poivrons frais et du bacon grillé",
+      "description": "A pizza with fresh peppers and crispy bacon for a delightful combination of flavors. Ingredients: Pizza dough, tomato sauce, mozzarella cheese, bell peppers, bacon.",
       "imageUrl": "./assets/Images/stockImages/pizza3.jpg",
       "quantity": 1
     },
@@ -76,7 +76,7 @@
       "isSpecial": true,
       "name": "Végétarienne",
       "price": 5.5,
-      "description": "Des bons légumes et un oeuf",
+      "description": "A pizza loaded with fresh vegetables and topped with a delicious egg. Ingredients: Pizza dough, tomato sauce, mozzarella cheese, bell peppers, onions, mushrooms, olives, egg.",
       "imageUrl": "./assets/Images/stockImages/pizza4.jpg",
       "quantity": 1
     },
@@ -86,7 +86,7 @@
       "isSpecial": false,
       "name": "Chicken",
       "price": 5.75,
-      "description": "Du poulet grillé avec des légumes",
+      "description": "A pizza with grilled chicken and a medley of vegetables for a satisfying and flavorful option. Ingredients: Pizza dough, tomato sauce, mozzarella cheese, grilled chicken, bell peppers, onions, mushrooms.",
       "imageUrl": "./assets/Images/stockImages/pizza5.jpg",
       "quantity": 1
     },
@@ -96,7 +96,7 @@
       "isSpecial": false,
       "name": "Méditéranéenne",
       "price": 5.25,
-      "description": "Jambon, champignons, olives et roquette",
+      "description": "A pizza with ham, mushrooms, olives, and arugula for a taste of the Mediterranean. Ingredients: Pizza dough, tomato sauce, mozzarella cheese, ham, mushrooms, olives, arugula.",
       "imageUrl": "./assets/Images/stockImages/pizza6.jpg",
       "quantity": 1
     },
@@ -106,7 +106,7 @@
       "isSpecial": false,
       "name": "Frites originales",
       "price": 3,
-      "description": "Nos frites à base de pommes de terre françaises",
+      "description": "Our fries are made from French potatoes, ensuring an original and delicious taste. Ingredients: Potatoes, salt.",
       "imageUrl": "./assets/Images/stockImages/fries1.jpg",
       "quantity": 1
     },
@@ -116,7 +116,7 @@
       "isSpecial": false,
       "name": "Frites au cheddar",
       "price": 4.5,
-      "description": "cette frite est doublement délicieuse",
+      "description": "These fries are doubly delicious, with a generous topping of melted cheddar cheese. Ingredients: Potatoes, salt, cheddar cheese.    ",
       "imageUrl": "./assets/Images/stockImages/cheddarFries.png",
       "quantity": 1
     },
@@ -279,6 +279,51 @@
       "price": "5.5",
       "description": "Dégustez l'alliance parfaite d'un bœuf juteux grillé à la flamme, niché entre deux petits pains moelleux, agrémenté d'ingrédients alléchants. Une expérience ultime du burger qui vous laissera en redemander.",
       "imageUrl": "./assets/Images/stockImages/burger6.jpg"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "jason",
+      "email": "jason@gmail.com",
+      "password": "123",
+      "points": 0,
+      "Cpassword": "123"
+    },
+    {
+      "id": 2,
+      "username": "123",
+      "email": "123",
+      "password": "123",
+      "points": 183.525,
+      "Cpassword": "123"
+    },
+    {
+      "id": 3,
+      "username": "test",
+      "email": "123",
+      "password": "123",
+      "commandes": 7,
+      "points": 665,
+      "Cpassword": "123"
+    },
+    {
+      "id": 4,
+      "username": "utbm",
+      "email": "utbm@gmail.com",
+      "password": "1234",
+      "commandes": 1,
+      "points": 101.25,
+      "Cpassword": "1234"
+    },
+    {
+      "id": 5,
+      "username": "abcd",
+      "email": "123",
+      "password": "123",
+      "commandes": 0,
+      "points": 0,
+      "Cpassword": "123"
     }
   ]
 }

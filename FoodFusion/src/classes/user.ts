@@ -3,14 +3,16 @@ export class user{
     username:string
     email:string
     password:string
-    Cpassword:string
-    constructor(id:number,username:string,email:string,password:string,Cpassword:string){
+    Cpassword!:string
+    points:number
+    commandes:number
+    constructor(id:number,username:string,email:string,password:string,points:number,commandes:number){
         this.id = id
         this.username = username;
         this.email = email
         this.password = password
-        this.Cpassword = Cpassword
-
+        this.commandes = commandes
+        this.points = points
     }
 
 }

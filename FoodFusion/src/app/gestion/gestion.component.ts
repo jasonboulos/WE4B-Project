@@ -32,8 +32,9 @@ deleteproduct(product:Product){
   });
 
 }
-getProductbytype(){
-  console.log(this.type)
+getProductbytype($event:any){
+  console.log($event.target.value)
+  this.type = $event.target.value
   if(this.type==""){
     this.service.getProducts().subscribe(data=>this.products=data)
   }

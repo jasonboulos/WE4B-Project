@@ -9,8 +9,10 @@ import { map, switchMap, tap } from 'rxjs/operators';
 export class UsersService {
   private apiUrl = 'http://localhost:3000/user';
   user!:user;
+  public useron!:string
   private currentId = 0;
   public isAdminOn!:boolean 
+  public isUserOn!:boolean
   constructor(private http: HttpClient ) { }
   // registerUser(user: user): Observable<user> {
   //   return this.http.post<user>('http://localhost:3000/user', user).pipe(
@@ -25,7 +27,8 @@ export class UsersService {
   // }
 
   addUser(user: any): Observable<any> {
-    user.id = ++this.currentId;
+    // user.id = ++this.currentId;
+    
     return this.http.post<any>('http://localhost:4000/user', user);
   }
 
@@ -34,9 +37,13 @@ export class UsersService {
   }
 
 
+
    getUsers(): Observable<user[]>{
     return this.http.get<user[]>('http://localhost:4000/user')
 
+   }
+   getUserByname(username:string){
+    return this.http.get<user[]>('http://localhost:4000/user').pipe(map(users=>users.find(user=> user.username === username)))
    }
    getUserTableLength(): Observable<number> {
     return this.getUsers().pipe(
@@ -46,6 +53,11 @@ export class UsersService {
         return of(0); 
       })
     );
+   }
+   updateuser(user:user): Observable<any>{
+    console.log(user.id)
+    const url = `http://localhost:4000/user/${user.id}`;
+    return this.http.put(url,user)
    }
   
 

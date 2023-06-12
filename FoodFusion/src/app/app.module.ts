@@ -31,6 +31,9 @@ import { ShopComponent } from './shop/shop.component';
 import { ShopproductComponent } from './shopproduct/shopproduct.component';
 import { FormsModule } from '@angular/forms';
 import { GestionComponent } from './gestion/gestion.component';
+import { UserpageComponent } from './userpage/userpage.component';
+import { UserleftComponent } from './userleft/userleft.component';
+import { UserrightComponent } from './userright/userright.component';
 
 
 
@@ -62,6 +65,9 @@ import { GestionComponent } from './gestion/gestion.component';
     ShopComponent,
     ShopproductComponent,
     GestionComponent,
+    UserpageComponent,
+    UserleftComponent,
+    UserrightComponent,
    
   ],
   imports: [

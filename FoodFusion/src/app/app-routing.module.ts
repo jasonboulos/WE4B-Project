@@ -13,6 +13,7 @@ import { SaladesComponent } from './salades/salades.component';
 import { BoissonsComponent } from './boissons/boissons.component';
 import { FullproductComponent } from './fullproduct/fullproduct.component';
 import { GestionComponent } from './gestion/gestion.component';
+import { UserpageComponent } from './userpage/userpage.component';
 
 const routes: Routes = [
   {path : '', component : HomeComponent},
@@ -30,7 +31,8 @@ const routes: Routes = [
   {path : 'login', component : LoginComponent},
   {path : 'signin', component : SigninComponent},
   {path: 'nosproduits/:id',component:FullproductComponent},
-  {path:'gestion', component: GestionComponent}
+  {path:'gestion', component: GestionComponent},
+  {path:'userpage', component:UserpageComponent}
 ];
 
 @NgModule({

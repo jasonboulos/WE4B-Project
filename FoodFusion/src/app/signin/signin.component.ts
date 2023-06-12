@@ -13,59 +13,54 @@ import { count } from 'rxjs';
 export class SigninComponent {
   numberofusers:number = 0;
   
-  user:user = new user(0,"","","","")
-
-
+  user:user = new user(0,"","","",0,0)
+  test:user =  new user(0,"","","",0,0)
+  Userarray!:user[] 
   constructor(private service:UsersService){
 
   }
   public errorusername:boolean = false
+  public usernameexist:boolean = false
   public errorpassword:boolean = false
   public accountcreated:boolean = false
 
-  signIn(){
-    
-    if(this.user.username.length < 3){
-      this.errorusername = true
-      this.errorpassword = false
-      this.accountcreated =false
-    }
-    else if(this.user.password != this.user.Cpassword){
-      this.errorpassword = true
-      this.errorusername = false
-      
-   
 
-    }
-   
-    else{
-      this.errorpassword = false
-      this.errorusername =false
-      this.accountcreated = true
-      // this.service.addUser(this.user).subscribe(data=>{this.user = data})
-      // this.service.getNumberOfUsers().subscribe((count)=>{
-      //   // console.log(count)
-      //   this.user.id = count +1;
-      //   console.log(this.user.id)
-       this.service.addUser(this.user).subscribe(data=>{
-           this.user = data
-           console.log(data)
-         })
-        // })
-      // this.service.registerUser(this.user).subscribe((response)=>{
-      //   console.log("signin", response);
-      //   this.user = new user(0,"","","","")
-      // },(error)=>{console.log("error", error)})
-   
-      
-  
-        
-
-      
-    }
  
 
-  }
+signIn() {
+  console.log(this.user.username);
+  this.service.getUsers().subscribe((data: user[]) => {
+    this.Userarray = data.filter(user => user.username === this.user.username);
+
+    if (this.user.username.length < 3) {
+      this.errorusername = true;
+      this.errorpassword = false;
+      this.accountcreated = false;
+    } else if (this.user.password !== this.user.Cpassword) {
+      this.errorpassword = true;
+      this.errorusername = false;
+      this.accountcreated = false;
+    } else if (this.Userarray.length > 0) {
+      this.usernameexist = true;
+      this.errorpassword = false;
+      this.errorusername = false;
+      this.accountcreated = false;
+    } else {
+      this.errorpassword = false;
+      this.usernameexist = false;
+      this.errorusername = false;
+      this.accountcreated = true;
+      
+      this.service.getNumberOfUsers().subscribe((count) => {
+        this.user.id = count + 1;
+      });
+      
+      this.service.addUser(this.user).subscribe(data => {
+        this.user = data;
+      });
+    }
+  });
+}
 
   
 }

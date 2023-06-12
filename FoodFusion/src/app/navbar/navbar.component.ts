@@ -12,9 +12,18 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
   selectedMenuItem: string = '';
    nbselecteditems:number = 0;
-   isAdminOn!:boolean
+   public isAdminOn!:boolean
+   public isUserOn!:boolean 
+   public username !:string 
   constructor(private service: ProductserviceService, public userservice:UsersService, private router: Router){
-    
+   const storedLoginStatus =  localStorage.getItem('isUserOn') 
+   const storedAdminStatus = localStorage.getItem('isAdminOn')
+   this.isAdminOn = !!storedAdminStatus
+   
+   this.isUserOn = !!storedLoginStatus
+   
+   this.username = localStorage.getItem('name')??''
+   
 
     
     
@@ -23,8 +32,18 @@ export class NavbarComponent {
     return this.service.nbSelectedItems()
   }
   logout(){
+    
+    localStorage.removeItem('isAdminOn')
+    this.isAdminOn = false;
     this.userservice.isAdminOn = false;
+    localStorage.removeItem('isUserOn')
+    this.isUserOn = false
+    this.userservice.isUserOn = false;
     this.router.navigate([""])
+    this.username=""
+  }
+  userpage(){
+    this.router.navigate(["userpage"])
   }
  
 
@@ -35,7 +54,7 @@ export class NavbarComponent {
  ngOnInit(){
   // this.isAdminOn = this.userservice.isAdminOn
   //   console.log(this.isAdminOn)
- 
+//  
  }
 
 

@@ -33,7 +33,7 @@
             id="navbarCenteredExample"
            >
             <!-- Left links -->
-            <ul *ngIf="!this.userservice.isAdminOn" class="navbar-nav mb-2 mb-lg-0 text">
+            <ul *ngIf="!this.userservice.isAdminOn &&!isAdminOn" class="navbar-nav mb-2 mb-lg-0 text">
               <li class="nav-item" >
                 <a class="nav-link active" (click)="selectMenuItem('ACCUIEL')" [class.active]="selectedMenuItem === 'ACCUIEL'" aria-current="page"   routerLink=''>ACCUIEL</a>
               </li>
@@ -45,7 +45,7 @@
                 <a class="nav-link" (click)="selectMenuItem('CONTACT')" [class.active]="selectedMenuItem === 'CONTACT'" routerLink='/contact'>CONTACT</a>
               </li>
               <!-- Navbar dropdown -->
-              <li class="nav-item dropdown">
+              <li *ngIf="!isUserOn && !this.userservice.isUserOn" class="nav-item dropdown">
                 <a (click)="selectMenuItem('MONCOMPTE')" [class.active]="selectedMenuItem === 'MONCOMPTE'"
                   class="nav-link dropdown-toggle"
                   
@@ -67,21 +67,31 @@
                   </li>
                 </ul>
               </li>
+              <a class="a"(click)="selectMenuItem('users')" [class.active]="selectedMenuItem === 'users'">
+                <div  (click)="userpage()" *ngIf="isUserOn || this.userservice.isUserOn" class=" user">
+                
+                  <i class="far fa-circle-user"></i>
+                  <!-- <p >{{username}}</p> -->
+                </div> 
+              </a>
+              
+                
+              
               <!-- <li class="nav-item">
                 <a class="nav-link disabled"
                   >Disabled</a
                 >
               </li> -->
             </ul>
-            <ul *ngIf="this.userservice.isAdminOn"  class="navbar-nav mb-2 mb-lg-0 text">
+            <ul *ngIf="this.userservice.isAdminOn ||isAdminOn"  class="navbar-nav mb-2 mb-lg-0 text">
               <li class="nav-item" >
-                <a class="nav-link" (click)="selectMenuItem('CONTACT')" [class.active]="selectedMenuItem === 'CONTACT'" routerLink='/contact'>Gestion des produits</a>
+                <a class="nav-link" (click)="selectMenuItem('CONTACT')" [class.active]="selectedMenuItem === 'CONTACT'" routerLink='/gestion'>Gestion des produits</a>
 
               </li>
               
               
             </ul>
-            <button  *ngIf="this.userservice.isAdminOn" (click)="logout()" class="logout-button">
+            <button  *ngIf="this.userservice.isAdminOn ||isAdminOn || isUserOn || this.userservice.isUserOn" (click)="logout()" class="logout-button">
               <i class="fas fa-sign-out-alt"></i>
               Logout
             </button>
@@ -90,7 +100,7 @@
           <!-- Collapsible wrapper -->
         </div>
         <!-- Container wrapper -->
-        <div *ngIf="!this.userservice.isAdminOn" class="d-flex justify-content-end shopicon">
+        <div *ngIf="!isAdminOn && !this.userservice.isAdminOn" class="d-flex justify-content-end shopicon">
           <a (click)="toggleCart()">
             
             <i  class="fas fa-cart-shopping"><span class="badge">{{ getSelectedItemsNumber() }}</span></i>

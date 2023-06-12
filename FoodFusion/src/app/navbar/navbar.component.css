@@ -33,7 +33,29 @@
   .shopicon a {
     position: relative;
   }
-  
+  .user{
+    display: flex;
+    position: relative;
+    top: 10px;
+    margin-top: 0px;
+    font-size: 30px;
+    margin-left: 90px;
+    font-family: 'Bebas Neue', sans-serif;
+
+  }
+  .user:hover{
+    cursor: pointer;
+    color:  rgb(120,41,15);
+  }
+  .a:active{
+    color:  rgb(120,41,15);
+  }
+  .user p{
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+   
+  }
   .shopicon .badge {
     position: absolute;
     top: -8px;
@@ -52,9 +74,10 @@
     display: flex;
     position: absolute;
     right: 5%;
+    margin-right: 80px;
     align-items: right;
     justify-content: right;
-    padding: 10px 30px;
+    padding: 7px 30px;
     background-color: #ff5555;
     color: #fff;
     border: none;

@@ -27,7 +27,22 @@
     padding: 40px 60px;
     color: rgb(120,41,15)
 }
-
+.errors{
+    display: block;
+    
+    width: 100%;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 28%;
+}
+.errors a{
+    margin-left: 10%;
+    color: rgb(120,41,15);
+}
+.l{
+   
+}
 @media (max-width:991px) {
     .register-photo form {
         padding: 40px
